@@ -131,6 +131,18 @@
   }
 }
 
+@media (min-width: $hdScreen) {
+  .nav {
+    ul li a {
+      font-size: 2.5rem;
+    }
+  }
+
+  .nav .create-your-own a {
+    font-size: 5.4rem;
+  }
+}
+
 // Animation Keyframes
 @keyframes slide-in {
   100% {

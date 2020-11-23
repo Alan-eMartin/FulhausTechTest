@@ -120,6 +120,12 @@
   }
 }
 
+@media (min-width: $hdScreen) {
+  .header-content h1 {
+    font-size: 10.6rem;
+  }
+}
+
 // Animation Keyframes
 @keyframes fade-in {
   from {
