@@ -37,6 +37,7 @@
         transition: all 0.3s;
 
         &:hover,
+        &:focus,
         &:focus {
           transform: translateY(-0.2rem) scale(1.1);
         }
