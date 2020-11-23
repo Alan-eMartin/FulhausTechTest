@@ -6,9 +6,15 @@ const Nav = ({isMobileOpen, screenSize}) => {
     <div className={screenSize >= 1150 || !isMobileOpen ? 'drawer' : 'drawer nav-open'}>
       <nav className='nav'>
         <ul>
-          <li><a href="https://fulhaus.com/pages/haus-in-a-box-by-fulhaus">Samples</a></li>
-          <li><a href="https://fulhaus.com/collections">Store</a></li>
-          <li><a href="https://fulhaus.com/pages/contact-us-1">Contact</a></li>
+          <li>
+            <a href="https://fulhaus.com/pages/haus-in-a-box-by-fulhaus">Samples</a>
+          </li>
+          <li>
+            <a href="https://fulhaus.com/collections">Store</a>
+          </li>
+          <li>
+            <a href="https://fulhaus.com/pages/contact-us-1">Contact</a>
+          </li>
         </ul>
         <div className="create-your-own">
           <a href="https://fulhaus.com/pages/how-it-works" title='Create your own package'>
