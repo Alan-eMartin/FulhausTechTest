@@ -11,7 +11,8 @@ A fully-responsive landing page built for Fülhaus' Front End Tech Test.
 
 <img src="https://cdn.dribbble.com/users/3830794/screenshots/8936070/media/957ee3f549a12883db401f74da3960aa.gif" alt="Image of Fulhaus' design to be recreated">
 
-## Click Here to See It **Live**
+## [Click Here For Live Version](https://alan-emartin.github.io/FulhausTechTest/)
+
 
 ## Project Info
 
