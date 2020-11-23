@@ -7,7 +7,7 @@
 
 ## Description
 
-A fully-responsive landing page built for Fülhaus' Front End Tech Test.
+Fully-responsive design conversion built for Fülhaus' take-home tech challenge using React JS and SCSS.
 
 <img src="https://cdn.dribbble.com/users/3830794/screenshots/8936070/media/957ee3f549a12883db401f74da3960aa.gif" alt="Image of Fulhaus' design to be recreated">
 
