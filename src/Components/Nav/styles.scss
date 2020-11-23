@@ -19,7 +19,7 @@
 
 .nav {
   height: 100vh;
-  width: 95%;
+  width: 92.5%;
   flex-direction: column;
   align-items: center;
   background-color: $accentColor;
@@ -68,7 +68,7 @@
 
 .accent-block {
   height: 100%;
-  width: 5%;
+  width: 7.75%;
   background-color: $accentColor2;
 }
 
@@ -118,6 +118,12 @@
     ul li a {
       font-size: 3rem;
     }
+  }
+}
+
+@media (max-height: $phoneLS) {
+  .nav ul {
+    margin-top: 5rem;
   }
 }
 
