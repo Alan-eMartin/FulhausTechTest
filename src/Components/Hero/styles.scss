@@ -1,1 +1,139 @@
+@import '../../Sass/variables';
 
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('../../Assets/images/heroBackground.png');
+  background-position: center;
+  background-size: cover;
+  animation: bg-fade-in 2s ease-in;
+}
+
+.header-content {
+  height: 100%;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    bottom: 49%;
+    left: 12%;
+    font-size: 5.5vw;
+    text-shadow: 0 0 1rem $accentColor;
+    animation: fade-in 2s ease-in;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 2rem;
+  transition: all 1s;
+
+  img {
+    width: 5rem;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.mobile-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+// Media Queries
+@media (max-width: $smlTablet) {
+  .header-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      font-size: 8vw;
+      width: 100%;
+      top: 35%;
+      left: 0;
+
+      span {
+        display: block;
+        font-size: 4.3vw;
+        font-family: $bodyFont;
+        margin-top: 0.5rem;
+        animation-delay: 1s;
+        animation: fade-in 3s ease-in;
+
+        a {
+          transition: all 0.3s;
+
+          &:hover,
+          &:focus {
+            color: $accentColor2;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-button {
+    display: block;
+    z-index: 30;
+  }
+}
+
+@media (max-width: $lrgPhone) {
+  .header-content h1 {
+    font-size: 4.3rem;
+
+    span {
+      margin-top: 0.3rem;
+      a {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .mobile-button {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: $smlPhone) {
+  .header-content h1 {
+    font-size: 3.5rem;
+
+    span a {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Animation Keyframes
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bg-fade-in {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}

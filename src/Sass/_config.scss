@@ -5,8 +5,9 @@ html {
 body {
   background-color: #ffffff;
   color: #000;
-  font-family: 'Arial', sans-serif;
-  font-size: 1.6rem;
+  font-family: $bodyFont;
+  font-size: 2.5rem;
+  overflow: hidden;
 }
 
 h1,
@@ -18,12 +19,20 @@ p {
   padding: 0;
 }
 
+h1,
+h2,
+h3 {
+  color: $headingColor;
+  font-family: $headingFont;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: $headingColor;
 }
 
 img {
@@ -34,6 +43,6 @@ img {
 
 .container {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
 }
